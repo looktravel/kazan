@@ -304,7 +304,7 @@ button:hover{
     background: #FF4D00;
     box-shadow: 0px 0px 20px rgba(255, 76, 0, 0.8);
     border-radius: 30px;
-    padding: 8px 3px;
+    padding: 9px 4px;
 }
 .present__link--inner{
     padding: 7px 25px;
@@ -837,6 +837,8 @@ button:hover{
 }
 .main-catalog{
     padding-top: 50px;
+    background: #fff;
+    padding-bottom: 130px;
 }
 .main-catalog__link-block{
     width: 825px;
@@ -844,15 +846,17 @@ button:hover{
     align-items: center;
     justify-content: end;
     padding-top: 30px;
+    padding-bottom: 50px;
 }
 .catalog__link--padding{
     padding-left: 50px;
 }
 .catalog__cards{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
+    margin-bottom: 70px;
 }
 .catalog__card{
     display: flex;
@@ -864,6 +868,7 @@ button:hover{
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    margin-bottom: 30px;
 }
 .catalog__card-img{
     width: 100%;
@@ -928,11 +933,13 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 .catalog__card-text-line{
     position: absolute;
-    top: 19px;
-    left: -3px;
+    top: 30px;
+    left: 6px;
     width: 58px;
     border: 1px solid #FF0000;
 }
@@ -945,21 +952,92 @@ button:hover{
 }
 .catalog__card-old-big{
     font-size: 18px;
+    padding-left: 10px;
 }
 
 .catalog__card-new-block{
-    max-width: 212px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border: 1px solid #FF9900;
     box-sizing: border-box;
     border-radius: 10px;
+    padding: 5px 0;
 }
 .catalog__card-new-price{
-    opacity: 1;
+    font-family: "Gilroy Bold";
+    font-size: 24px;
+    color: #000000;
+    padding: 0 17px;
 }
 .catalog__card-text{
     font-family: "Gilroy Regular";
     font-size: 12px;
+    padding-right: 9px;
+}
+
+.catalog__card-btn-block{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.catalog__card-btn{
+    padding: 8px 69px;
+}
+.catalog__card-cart{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: url(../img/shopping_cart_19.svg) #FF9900 center no-repeat;
+
+}
+.catalog__card-plus{
+    position: absolute;
+    top: -4px;
+    left: 32px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+    background: #000;
+    color: #fff;
+    border-radius: 50%;
+    padding-top: 1px;
+    padding-left: 7px;
+}
+.catalog-person{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.catalog-person__icon{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background: url(../img/big-family.svg) #FF9900 center no-repeat;
+    border-radius: 50%;
+    margin-left: 48px;
+}
+.catalog-person__icon::before{
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #FF9900;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.1));
+    border-radius: 50%;
+}
+.catalog-person__text{
+    padding: 26px 39px;
+
 }
